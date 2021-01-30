@@ -8,6 +8,11 @@ body {
     font-family: sans-serif;
 }
 
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 h1 {
     padding: 48px;
 }
@@ -33,8 +38,16 @@ nav {
     background-color: #b0d892;
     padding: 128px 0;
     margin-bottom: 24px;
+    width: calc(98%/3);
 }
 
 footer {
     padding: 48px 0;
+}
+
+@media only screen and (min-width: 1300px){
+    .fixed-container {
+        width: 1300px;
+        margin: 0 auto;
+    }
 }
